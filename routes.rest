@@ -8,6 +8,33 @@ GET https://localhost:8080/contacts
 ### Get Single Contact
 GET https://localhost:8080/contacts/66faa47a621d03d1b1b756ce
 
+### Create Contact
+POST https://localhost:8080/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Itokiana",
+    "lastName": "Bogosy",
+    "email": "bogosy.itok@gmail.com",
+    "favoriteColor": "red",
+    "birthday": "28/08/2022"
+}
+
+### Update Contact
+PUT https://localhost:8080/contacts/66faa47a621d03d1b1b756ce HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Faharetana Andriatsiva",
+    "lastName": "Rakotomamonjy",
+    "email": "fahareta.rak.spat@port-toamasina.com",
+    "favoriteColor": "grey",
+    "birthday": "16/03/1995"
+}
+
+### Delete Contact
+DELETE https://localhost:8080/contacts/66faa9c3621d03d1b1b756cf
+
 // PRODUCTION
 ### Home Page
 GET https://project1-esjo.onrender.com
@@ -17,3 +44,30 @@ GET https://project1-esjo.onrender.com/contacts
 
 ### Get Single Contact
 GET https://project1-esjo.onrender.com/contacts/66faa47a621d03d1b1b756ce
+
+### Create Contact
+POST https://project1-esjo.onrender.com/contacts HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Itokiana",
+    "lastName": "Bogosy",
+    "email": "bogosy.itok@gmail.com",
+    "favoriteColor": "red",
+    "birthday": "28/08/2022"
+}
+
+### Update Contact
+PUT https://project1-esjo.onrender.com/contacts/66faa47a621d03d1b1b756ce HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "Faharetana Andriatsiva",
+    "lastName": "Rakotomamonjy",
+    "email": "fahareta.rak.spat@port-toamasina.com",
+    "favoriteColor": "grey",
+    "birthday": "16/03/1995"
+}
+
+### Delete Contact
+DELETE https://project1-esjo.onrender.com/contacts/66faa9c3621d03d1b1b756cf
